@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
         val viewPager = findViewById<ViewPager>(R.id.viewPager)
+        val buyTicket = findViewById<Button>(R.id.buy_ticket)
 
         val adapter = object : FragmentPagerAdapter(supportFragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
             override fun getItem(position: Int): Fragment {
@@ -47,6 +49,11 @@ class MainActivity : AppCompatActivity() {
 
         viewPager.adapter = adapter
         tabLayout.setupWithViewPager(viewPager)
+
+        buyTicket.setOnClickListener{
+            Toast.makeText(this, "Ticket Purchased",
+                Toast.LENGTH_LONG).show()
+        }
 
     }
 

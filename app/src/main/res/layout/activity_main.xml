@@ -47,17 +47,23 @@
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"
-            android:layout_width="416dp"
-            android:layout_height="match_parent"
+            android:layout_width="400dp"
+            android:layout_height="514dp"
+            android:layout_gravity="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_gravity="center"
             app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
 
-
-
+        <Button
+            android:id="@+id/buy_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Ticket"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
 
     </LinearLayout>
 

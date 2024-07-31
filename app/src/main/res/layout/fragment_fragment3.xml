@@ -29,14 +29,6 @@
              \nStarring: Freya Allan, Kevin Durand"
             tools:ignore="HardcodedText" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Buy Ticket"
-            android:textSize="16sp"
-            android:layout_gravity="center"
-            tools:ignore="HardcodedText" />
-
     </LinearLayout>
 
 </FrameLayout>
